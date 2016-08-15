@@ -110,7 +110,9 @@
       GLEXT(PFNGLGETACTIVEUNIFORMARBPROC, glGetActiveUniform)                 \
       GLEXT(PFNGLGENERATEMIPMAPEXTPROC, glGenerateMipmap)                     \
       GLEXT(PFNGLGETATTRIBLOCATIONPROC, glGetAttribLocation)                  \
-      GLEXT(PFNGLDRAWELEMENTSINSTANCEDPROC, glDrawElementsInstanced)
+      GLEXT(PFNGLDRAWELEMENTSINSTANCEDPROC, glDrawElementsInstanced)          \
+      GLEXT(PFNGLPUSHDEBUGGROUPPROC, glPushDebugGroup)                        \
+      GLEXT(PFNGLPOPDEBUGGROUPPROC, glPopDebugGroup)
 #define GLEXT(type, name) extern type name;
 GLBASEEXTS
 GLEXTS

@@ -13,6 +13,8 @@
 // limitations under the License.
 
 #include "precompiled.h"  // NOLINT
+
+#include "fplbase/debug_markers.h"
 #include "fplbase/render_target.h"
 #include "fplbase/renderer.h"
 #include "fplbase/utilities.h"
@@ -190,6 +192,8 @@ bool Renderer::Initialize(const vec2i &window_size, const char *window_title) {
 #endif
 
   InitializeUniformLimits();
+
+  DebugMarkersInit();
 
   return true;
 }

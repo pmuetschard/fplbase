@@ -217,6 +217,7 @@ endif()
 set(fplbase_common_SRCS
   include/fplbase/asset_manager.h
   include/fplbase/async_loader.h
+  include/fplbase/debug_markers.h
   include/fplbase/fpl_common.h
   include/fplbase/glplatform.h
   include/fplbase/input.h
@@ -233,6 +234,7 @@ set(fplbase_common_SRCS
   include/fplbase/version.h
   schemas
   src/asset_manager.cpp
+  src/debug_markers.cpp
   src/material.cpp
   src/mesh.cpp
   src/precompiled.cpp
